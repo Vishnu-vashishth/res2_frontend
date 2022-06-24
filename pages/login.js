@@ -27,7 +27,7 @@ const login = () => {
     e.preventDefault();
     setLoading(true);
     await axios
-      .post(`http://3.238.183.53:5030/api/login`, {
+      .post(`https://res2serverapi.herokuapp.com/api/login`, {
         email,
         password,
       })

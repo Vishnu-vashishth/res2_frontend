@@ -15,7 +15,7 @@ const users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       await axios
-        .get(`http://3.238.183.53:5030/api/users`)
+        .get(`https://res2serverapi.herokuapp.com/api/users`)
         .then((data) => {
           setAllUsers(data.data.users);
         });

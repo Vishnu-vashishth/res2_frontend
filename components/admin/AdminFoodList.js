@@ -15,7 +15,7 @@ const AdminFoodList = ({ item }) => {
   const handleDelete = async () => {
     const token = JSON.parse(window.localStorage.getItem("token"));
     await axios
-      .delete(`http://3.238.183.53:5030/api/food/${item._id}`, {
+      .delete(`https://res2serverapi.herokuapp.com/api/food/${item._id}`, {
         headers: { Authorization: token },
       })
       .then((data) => {
@@ -50,7 +50,7 @@ const AdminFoodList = ({ item }) => {
     const data = await res.json();
     await axios
       .put(
-        `http://3.238.183.53:5030/api/food/${item._id}`,
+        `https://res2serverapi.herokuapp.com/api/food/${item._id}`,
         {
           name,
           category,

@@ -27,7 +27,7 @@ const register = () => {
     e.preventDefault();
     setLoading(true);
     await axios
-      .post(`http://3.238.183.53:5030/api/register`, {
+      .post(`https://res2serverapi.herokuapp.com/api/register`, {
         name,
         email,
         password,

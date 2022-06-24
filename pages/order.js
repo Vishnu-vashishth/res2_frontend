@@ -27,7 +27,7 @@ const order = () => {
     e.preventDefault();
     setLoading(true);
     await axios
-      .post(`http://3.238.183.53:5030/api/order/new`, {
+      .post(`https://res2serverapi.herokuapp.com/api/order/new`, {
         name,
         email,
         foodName,

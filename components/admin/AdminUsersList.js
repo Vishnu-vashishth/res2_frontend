@@ -9,7 +9,7 @@ const AdminUsersList = ({ item }) => {
   const handleDelete = async () => {
     const token = JSON.parse(window.localStorage.getItem("token"));
     await axios
-      .delete(`http://3.238.183.53:5030/api/user/${item._id}`, {
+      .delete(`https://res2serverapi.herokuapp.com/api/user/${item._id}`, {
         headers: { Authorization: token },
       })
       .then((data) => {

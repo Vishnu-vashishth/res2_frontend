@@ -3,7 +3,7 @@ module.exports = {
     domains: ["www.freepnglogos.com"],
   },
   env:{
-    "NEXT_PUBLIC_BASE_URL" : "http://3.238.183.53:5030/api"
+    "NEXT_PUBLIC_BASE_URL" : "https://res2serverapi.herokuapp.com/api"
   }
  
 };

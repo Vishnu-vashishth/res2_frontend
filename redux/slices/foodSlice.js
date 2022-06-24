@@ -17,7 +17,7 @@ const foodSlice = createSlice({
 export default foodSlice.reducer;
 
 export const fetchFoods = createAsyncThunk("Food/fetch", async () => {
-  const res = await fetch(`http://3.238.183.53:5030/api/foods`);
+  const res = await fetch(`https://res2serverapi.herokuapp.com/api/foods`);
   const res2 = await res.json();
   return res2.foods;
 });

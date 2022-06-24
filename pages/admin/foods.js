@@ -51,7 +51,7 @@ const foods = ({ result }) => {
 
     await axios
       .post(
-        `http://3.238.183.53:5030/api/food/new`,
+        `https://res2serverapi.herokuapp.com/api/food/new`,
         {
           name,
           category,
