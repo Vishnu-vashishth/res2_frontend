@@ -17,6 +17,21 @@ const order = () => {
   const foodName = cart.map((item) => item.name);
   const { enqueueSnackbar } = useSnackbar();
 
+  function gotowhatsapp( name,email,foodName,address,) {
+    
+
+    var url = "https://wa.me/918750718133?text=" 
+    + "Name: " + name + "%0a"
+    + "email: " + email + "%0a"
+    + "foodName: " + foodName + "%0a"
+    + "address: " + address  + "%0a";
+    
+
+    window.open(url, '_blank').focus();
+}
+
+
+
   useEffect(() => {
     if (user === null) {
       Router.push("/login");
@@ -40,6 +55,8 @@ const order = () => {
           autoHideDuration: 3000,
         });
         Router.push("/thankyou");
+        gotowhatsapp(name,email,foodName,address);
+       
       })
       .catch((err) => {
         setLoading(false);
